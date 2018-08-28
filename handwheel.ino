@@ -128,7 +128,7 @@ bool encoder0PinANow = LOW;
 //
 // uncomment to switch from keystrokes to serial output for debugging
 //
-#define DEBUG
+//#define DEBUG
 
 
 //
@@ -308,6 +308,7 @@ void handleEncoder0() {
       #endif
     }
   }
+  encoder0PinALast = encoder0PinANow;
 }
 
 void loop() {
